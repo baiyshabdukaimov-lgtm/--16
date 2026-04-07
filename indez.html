@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вкусные Блюда - Гастро Мастер</title>
+    <title>Вкусный Header с JS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <div class="header-top">
-                <div class="logo">
-                    <h1>Gastro<span>Master</span></h1>
-                </div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Рецепты</a></li>
-                        <li><a href="#">Меню</a></li>
-                        <li><a href="#">Блог</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="hero-content">
-                <h2>Баардыгы Даамдуу</h2>
-                <p>Бизди танданыз.</p>
-                <a href="#" class="btn-primary">Смотреть Рецепты</a>
-            </div>
+    <header class="header">
+        <nav class="navbar" id="navbar">
+            <div class="logo">Chef<span>Master</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#" id="advice-btn" style="color: #ffcc00; cursor: pointer;">Совет дня</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Магия на твоей кухне</h1>
+            <p id="hero-text">Нажми на кнопку, чтобы получить кулинарное вдохновение!</p>
+            <button class="btn" id="main-action">Узнать рецепт</button>
         </div>
     </header>
+
+    <section style="height: 1000px; padding: 50px; text-align: center; background: #f4f4f4;">
+        <h2>Листай ниже, чтобы увидеть, как меняется навигация</h2>
+    </section>
 
 </body>
 </html>
